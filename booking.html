@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Details</title>
+    <style>
+        fieldset {
+            display: block;
+      margin-left: 250px;
+      margin-right: 400px;
+      padding-top: 20px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 1px groove (internal value);
+       
+          }
+          
+          legend {
+            background-color: #0e070e;
+            color: white;
+            padding: 5px 10px;
+          }
+          
+          input {
+            margin: 5px;
+          }
+         
+    body {
+        background-image: url('https://i.pinimg.com/originals/19/f3/8f/19f38f35722cbab852cbc07330b61dda.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    
+          </style>
+          <style>
+              .button {
+                background-color: #0a0a0a;
+        border: white;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+      }
+    
+          </style>
+</head>
+<body> 
+    
+    <div class="booking">
+    
+        <form method="POST" id="register" action="">
+         
+         <br>
+         <fieldset style="color:white">
+            <legend><h3><u>Booking Details:</u></h3></legend>
+            <label><b>Arrival Date:</b></label>
+            <input type="date" min="2021-04-28" required > &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+            <label><b>Departure Date:</b></label>
+          <input type="date" min="2021-04-28" required > <br><br>
+          <label><b>No. of Guests:</b></label>
+          <input type="number" min="1" required> <br><br>
+          <label for="rooms"><b>Choose type of Room:</b></label>
+
+<select name="rooms" id="rooms">
+    <option value="select">Please select</option>
+  <option value=" Single"> Single</option>
+  <option value="Double">Double</option>
+  <option value="Triple">Triple</option>
+  <option value="Quad">Quad</option>
+  <option value=" Queen"> Queen</option>
+  <option value=" King"> King</option>
+  <option value="Twin">Twin</option>
+  <option value="Hollywood Twin Room">Hollywood Twin Room</option>
+  <option value="Double-double">Double-double</option>
+  <option value="Studio">Studio</option>
+  <option value=" Suite / Executive Suite"> Suite / Executive Suite</option>
+  <option value="Mini Suite or Junior Suite">Mini Suite or Junior Suite</option>
+  <option value=" President Suite | Presidential Suite"> President Suite | Presidential Suite</option>
+  <option value="Apartments / Room for Extended Stay">Apartments / Room for Extended Stay</option>
+  <option value="Connecting rooms">Connecting rooms</option>
+  <option value="Murphy Room">Murphy Room</option>
+  <option value=" Accessible Room / Disabled Room"> Accessible Room / Disabled Room</option>
+  <option value="Cabana">Cabana</option>
+  <option value="Adjoining rooms">Adjoining rooms</option>
+  <option value="Adjacent rooms">Adjacent rooms</option>
+  <option value="Villa">Villa</option>
+  <option value="Executive Floor/Floored Room">Executive Floor/Floored Room</option>
+ 
+  
+</select><br><br>
+<label><b>No. of Rooms:</b></label>
+<input type="number"  min="1"required> <br><br>
+<label for="price">Prcie Range($500-$15000):</label><br>
+<input type="range" id="vol" name="vol" min="300" max="15000"><br><br>
+<br><mark>Note:</mark></br>Your check-in time is 09:00 am on the day of arrival and check-out time is 12:00(noon) <br>on the day of departure.<br><br>
+<label>Free pickup?</label><br>
+<input type="radio" id="yes" name="yes" value="yes">
+<label for="yes">Yes</label>
+<input type="radio" id="no" name="no" value="no">
+<label for="no">No</label><br>
+If yes,
+<label>Flight Number</label>
+<input type="text" ><br><br>
+<label>Special Requests</label><br>
+<textarea rows="4" cols="50" name="request"></textarea><br><br>
+<mark><a href="https://www.designhotels.com/terms/">Terms And Conditions</a></mark><br><br>
+<input type="checkbox" name="T&C" value="yes" required> I declare that I read all the T&C and I accept them.
+<p style="text-align:right;"> <a href="payment.html" class="button">Next</a></p>
+
+</fieldset>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        fieldset {
+            display: block;
+      margin-left: 500px;
+      margin-right: 500px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 1px groove (internal value);
+       
+          }
+          
+          legend {
+            background-color: #192462;
+            color: white;
+            padding: 5px 10px;
+          }
+          
+          input {
+            margin: 10px;
+          }
+         
+    body {
+        background-image: url('https://image.shutterstock.com/image-photo/mobile-banking-network-online-payment-260nw-1431394361.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    
+          </style>
+          <style>
+              .button {
+                background-color: #023e8a;
+        border: white;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+      }
+    
+          </style>
+</head>
+<body>
+    <div class="payment">
+    
+        <form method="POST" id="register" action="">
+            <br>    <br>    <br>    <br>    <br>    <br>    <br>
+         <br>
+         <fieldset style="color:black">
+            <legend><h3><u>Booking Details:</u></h3></legend>
+           <center> <input type="number" name="Cardnumber" id="number" placeholder="Card number" required > <br><br>
+            <input type="text" name="name" id="name" placeholder="Cardholder name" required ><br><br>
+            <input type="number" name="expirydate" id="year" placeholder="Expiry date" pattern="[0-9]" required ><br><br>
+            <input type="number" name="cvv" id="number" placeholder="CVV" required ><br><br>
+        </center>
+            <p style="text-align:center;"> <a href="confirmation.html" class="button">Pay</a></p>
+
+    
+</body>
+</html>
